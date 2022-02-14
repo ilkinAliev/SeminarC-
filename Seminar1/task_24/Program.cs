@@ -1,8 +1,12 @@
 ﻿// Найти кубы чисел от 1 до N
 
-Console.Write("введите число - ");
+Console.Write("введите натуральное число - ");
 int N = int.Parse(Console.ReadLine());
-for (int i = 1; i <= N; i++)
+if (N > 0)
 {
-    Console.WriteLine($"{i} * {i} * {i} = {i*i*i}"); 
+    for (int i = 1; i <= N; i++)
+    {
+        Console.WriteLine($"{i} * {i} * {i} = {i * i * i}");
+    }
 }
+else Console.WriteLine("попробуйте снова ввести натуральное число (целое и положительное)");
